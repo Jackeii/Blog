@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1000px 100px;
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+}
+.box{
+    border: 1px solid rgb(228, 223, 223);
+    background: #0c0c05;
+    color: red
+    /*flex container*/
+}
+.header{ 
+    grid-area: hd;
+    justify-content:center;
+    text-align: center;
+}
+.main_content{
+    grid-area: main;
+    text-align: center;
+}
+.footer{
+    grid-area: ft;
+    text-align: center;
+}

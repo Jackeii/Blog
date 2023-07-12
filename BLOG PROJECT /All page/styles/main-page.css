@@ -1,0 +1,75 @@
+@import url(styles/about-page.css);
+@import url(styles/top-5-horrors.css);
+@import url(styles/subscribe.css);
+
+/*The style for the subscribe button still hasn't applied*/
+.container{
+    display: grid;
+
+    /* set up rows and columns below*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1000px 20px;
+    /* Set grid-area here*/
+    grid-template-areas: 
+    "hd hd hd"
+    "sd main main"
+    "ft ft ft";
+    /*grid container*/
+}
+.box{
+    border: 1px solid rgb(228, 223, 223);
+    background: #0c0c05;
+    color: red
+    /*flex container*/
+}
+.header{ 
+    grid-area: hd;
+    justify-content:center;
+    text-align: center;
+}
+.sidebar{
+    grid-area: sd;
+    text-align: center;
+}
+.main_content{
+    grid-area: main;
+    text-align: center;
+} 
+
+.footer{
+    grid-area: ft;
+    text-align: center;
+}
+
+.article-content {
+    margin: auto;
+}
+.article-content img {
+    border: 5px solid rgb(243, 8, 8);
+    width:auto; 
+    height: auto;
+}
+#welcome-img {
+    width: 80%;
+}
+
+@media (max-width: 900px) {
+    .container{
+        /* set up rows and columns below*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 20px;
+        /* Set grid-area here*/
+        grid-template-areas: 
+        "hd"
+        "sd"
+        "main"
+        "ft";
+        /*grid container*/
+    }
+}
+
+@media (max-width: 1250px){
+    .article-content img {
+        width: 95%;
+    }
+}

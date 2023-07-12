@@ -1,0 +1,9 @@
+.button_style{
+    background: red
+    /*background: whitesmoke*/
+    border-radius:40px; /*to round the corners of the button*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*still not working. I also tried to place the code directly in the css file with top-5-horrors with the same result*/
+
+

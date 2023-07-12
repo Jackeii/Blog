@@ -1,0 +1,33 @@
+.box{
+    border: 1px solid rgb(228, 223, 223);
+    background: #0c0c05;
+    color: red;
+    /*flex container*/
+}
+
+.header{ 
+    grid-area: hd;
+    justify-content:center;
+    text-align: center;
+}
+
+.main_content{
+    grid-area: main;
+    text-align: center;
+}
+.footer{
+    grid-area: ft;
+    text-align: center;
+}
+@media (min-width:1101px){
+    .container{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 100px 2400px 20px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd"
+        "main main main main main main main main main"
+        "ft ft ft ft ft ft ft ft ft";
+        
+    }
+}
